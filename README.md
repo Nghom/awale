@@ -1,6 +1,6 @@
 # awale
 
-Development is done on the develop branch \
+Development is done on the develop branch 
 
 To do so, type in
 
