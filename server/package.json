@@ -1,0 +1,32 @@
+{
+  "name": "awale_server",
+  "version": "1.0.0",
+  "description": "server to handle players login and their moves",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/math-alpha/awale.git"
+  },
+  "keywords": [
+    "awale",
+    "devc",
+    "buea",
+    "community",
+    "challenge"
+  ],
+  "author": "Ngadou Yopa, Djomo Brown, Pahonsi Bebeto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/math-alpha/awale/issues"
+  },
+  "homepage": "https://github.com/math-alpha/awale#readme",
+  "dependencies": {
+    "eslint": "^6.1.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
