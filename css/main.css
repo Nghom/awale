@@ -7,8 +7,30 @@
       float: right !important;
 }
 
-table, td{
+table{
       border: 1px solid black !important;
+}
+
+td {
+      border: 6px solid grey !important;
+}
+
+.hasCircle{
+      width:150px;
+      height:300px;
+      position:relative;
+      overflow:hidden;
+      float:left;
+}
+.hasCircle:after{
+      content:" ";
+      position:absolute;
+      left:0; right:0;
+      margin:100px auto;
+      width:100px;
+      height:100px;
+      border-radius:50%;
+      box-shadow: 0 0 0 1000px #444;
 }
 
 footer {
