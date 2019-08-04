@@ -12,6 +12,26 @@
       <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
       <link href="css/bootstrap.css" rel="stylesheet">
+      <script> 
+            
+            function drawBall( context,canvas,i,j) {
+                  var radius = 20; // ball radius
+                  var color = "#0000ff"; // ball color
+                   
+                  // initialise position and velocity of ball
+                  var x = 50+i;
+                  var y =50+j;
+                 
+                  with (context){
+                  //clearRect(0, 0, canvas.width, canvas.height); // clear canvas
+                  fillStyle = color;
+                  beginPath();
+                  arc(x, y, radius, 0, 2*Math.PI, true);
+                  closePath();
+                  fill();
+                  };
+            };
+                  </script>
 
       <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
@@ -47,34 +67,20 @@
 
           <div class="game-container">
 
-<<<<<<< HEAD
-                <div class="board-container">
-                      <table style="width: 80%; height: 3% !important;border: 1px solid black; margin: 50px auto auto auto;">
-                           
-                        <tr>
-                                 <td rowspan="2">0</td>
-                                
-                                 <td id="player-1-1"><form><input type="button" name="">4<output id="op"for="v"> </output></form></td>
-                                  <td id="player-1-2">4<form><input type="button" name="v2">4<output id="op"for="v"> </output></form></td>
-                                  <td id="player-1-3">4<form><input type="button" name="v2">4<output id="op"for="v"> </output></form></td>
-                                  <td id="player-1-4">4<form><input type="button" name="v2">4<output id="op"for="v"> </output></form></td>
-                                  <td id="player-1-5">4<form><input type="button" name="v2">4<output id="op"for="v"> </output></form></td>
-                                  <td id="player-1-6">4<form><input type="button" name="v2">4<output id="op"for="v"> </output></form></td>
-                                  <td rowspan="2">0</td>
-                            </tr>
-                            <tr>
-                                  <td id="player-2-1">4<form><input type="button" name="v2">4<output id="op"for="v"> </output></form></td>
-                                  <td id="player-2-2">4<form><input type="button" name="v2">4<output id="op"for="v"> </output></form></td>
-                                  <td id="player-2-3">4<form><input type="button" name="v2">4<output id="op"for="v"> </output></form></td>
-                                  <td id="player-2-4">4<form><input type="button" name="v2">4<output id="op"for="v"> </output></form></td>
-                                  <td id="player-2-5">4<form><input type="button" name="v2">4<output id="op"for="v"> </output></form></td>
-                                  <td id="player-2-6">4<form><input type="button" name="v2">4<output id="op"for="v"> </output></form></td>
-=======
                 <div class="board-container" style="background-image: url('assets/wood_background/images/wood2.png')">
                       <table style="font-size: xx-large;width: 100%; height: 5% !important; margin: 50px auto auto auto; color: white ; mso-foreground: #5a6268">
                             <tr>
                                   <td rowspan="2" style="width: 14%; text-align: center"><div class="hasCircle" style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">0</div></td>
-                                  <td id="player-1-1" style="width: 12%; text-align: center"><div class="hasCircle" style=" border: 20px solid #311F15; border-radius: 30px;">4</div></td>
+                                  <td id="player-1-1" style="width: 12%; text-align: center"><div class="hasCircle" style="height: 100%; border: 20px solid #311F15; border-radius: 30px;"><canvas id="canvas"  ></canvas>
+                                    <script> 
+                                      let canvas = document.getElementById('canvas');
+                                      let context = canvas.getContext('2d'); 
+                                 
+
+                                      drawBall( context,canvas,1,1);
+                                    
+                                      </script>
+                                    
                                   <td id="player-1-2" style="width: 12%; text-align: center"><div class="hasCircle" style=" border: 20px solid #311F15; border-radius: 30px;">4</div></td>
                                   <td id="player-1-3" style="width: 12%; text-align: center"><div class="hasCircle" style="height: 50%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
                                   <td id="player-1-4" style="width: 12%; text-align: center"><div class="hasCircle" style="height: 50%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
@@ -83,22 +89,19 @@
                                   <td rowspan="2" style="width: 14%; text-align: center"><div class="hasCircle" style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">0</div></td>
                             </tr>
                             <tr>
-<<<<<<< HEAD
                                   <td id="player-2-1" style="height: 100px; border: 16px solid grey">4</td>
                                   <td id="player-2-2" style="height: 100px; border: 16px solid grey">4</td>
                                   <td id="player-2-3" style="height: 100px; border: 16px solid grey">4</td>
                                   <td id="player-2-4" style="height: 100px; border: 16px solid grey">4</td>
                                   <td id="player-2-5" style="height: 100px; border: 16px solid grey">4</td>
                                   <td id="player-2-6" style="height: 100px; border: 16px solid grey">4</td>
->>>>>>> b1ca276fb0c6236f69e4e53bf3f03538ef96e00a
-=======
                                   <td id="player-2-1" style="width: 12%; text-align: center"><div class="hasCircle" style="height: 50%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
                                   <td id="player-2-2" style="width: 12%; text-align: center"><div class="hasCircle" style="height: 50%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
                                   <td id="player-2-3" style="width: 12%; text-align: center"><div class="hasCircle" style="border: 20px solid #311F15; border-radius: 30px;">4</div></td>
                                   <td id="player-2-4" style="width: 12%; text-align: center"><div class="hasCircle" style="height: 50%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
                                   <td id="player-2-5" style="width: 12%; text-align: center"><div class="hasCircle" style="height: 50%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
                                   <td id="player-2-6" style="width: 12%; text-align: center"><div class="hasCircle" style="height: 50%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
->>>>>>> 6ffcf5bb335811318df4f6a94111929678dddb4f
+
                             </tr>
                       </table>
                 </div>
