@@ -3,7 +3,9 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Ngadou Yopa Sylvestre Ronald -- Software Engineer -- math-alpha
+    Djomo Brown -- Software Enginner -- brown
+    Pahonsi
 
 # THANKS
 
