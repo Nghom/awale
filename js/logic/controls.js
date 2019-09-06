@@ -11,6 +11,8 @@ window.onload = function(){
 
             event.currentTarget.innerText = "Reset";
             setBoard();
+            playerTurn();
+            fillCell();
 
       });
 
@@ -38,20 +40,20 @@ const setBoard = () => {
 
 const getState = () => {
 
-      /**
+      /**************************************************************************************************
        * When you need an information about the current state of the game
        * @return an object with all the values a{i} : number_of_seeds followed by b{i} : number_of_seeds
-       * */
+       **************************************************************************************************/
 
 };
 
 const getContent = (elem_id) => {
 
-      /****************************************
+      /***********************************************************
        * Returns the number of seeds in a cell
        * @param {id} id of element we wish to get the content
        * @return {element} string representation of cell content
-       * */
+       * *********************************************************/
 
       let element = document.getElementById(elem_id).innerHTML;
 
