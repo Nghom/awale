@@ -14,6 +14,44 @@
       <link href="css/bootstrap.css" rel="stylesheet">
       <script rel="script" src="js/logic/controls.js"></script>
 
+      <style>
+            #board {
+                  border-radius: 30px ;
+                  background-image: url('assets/wood_background/images/wood2.png');
+            }
+
+            .hole {
+                  height: 100%;
+                  border: 20px solid #311F15;
+                  border-radius: 30px;
+                  min-height: 120px;
+                  text-align: center"
+            }
+
+            .havest {
+                  width: 14%;
+                  text-align: center ;
+            }
+
+            .box {
+                  width: 12%;
+                  text-align: center;  
+            }
+
+            table {
+                  width: 100%;
+                  height: 5% !important;
+                  margin: 20px auto auto auto;
+                  color: white ;
+                  mso-foreground: #5a6268;
+            }
+
+            button {
+                  margin-top: 20px;
+                  margin-bottom: 70px;
+            }
+      </style>
+
 </head>
 <body style="background-image: url('assets/wood_background/images/wood5.png')">
       <ul class="nav" style="font-size: xx-large">
@@ -28,8 +66,6 @@
       <div class="container">
 
             <div class="heading">
-
-                  <h1 class="title">Awale</h1>
 
                   <div class="scores-container row">
                         <div class="player-1 col" id="player-1">
@@ -51,41 +87,41 @@
 
           <div class="game-container">
 
-                <div class="board-container" style="background-image: url('assets/wood_background/images/wood2.png')">
-                      <table style="width: 100%; height: 5% !important; margin: 20px auto auto auto; color: white ; mso-foreground: #5a6268">
+                <div id="board" class="board-container">
+                      <table>
                             <tr>
-                                  <td rowspan="2" style="width: 14%; text-align: center"><div id="player-1-c"  style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">0</div></td>
-                                  <td style="width: 12%; text-align: center"><div id="player-1-1"  style="min-height: 120px; height: 100%; border: 20px solid #311F15; border-radius: 30px; text-align: center">4</div></td>
-                                  <td style="width: 12%; text-align: center"><div id="player-1-2"  style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
-                                  <td style="width: 12%; text-align: center"><div id="player-1-3"  style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
-                                  <td style="width: 12%; text-align: center"><div id="player-1-4"  style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
-                                  <td style="width: 12%; text-align: center"><div id="player-1-5"  style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
-                                  <td style="width: 12%; text-align: center"><div id="player-1-6"  style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
-                                  <td rowspan="2" style="width: 14%; text-align: center"><div id="player-2-c"  style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">0</div></td>
+                                  <td rowspan="2" class="havest" ><div id="player-1-c"  class="hole" >0</div></td>
+                                  <td class="box" ><div id="player-1-1"  class="hole" >4</div></td>
+                                  <td class="box" ><div id="player-1-2"  class="hole" >4</div></td>
+                                  <td class="box" ><div id="player-1-3"  class="hole" >4</div></td>
+                                  <td class="box" ><div id="player-1-4"  class="hole" >4</div></td>
+                                  <td class="box" ><div id="player-1-5"  class="hole" >4</div></td>
+                                  <td class="box" ><div id="player-1-6"  class="hole" >4</div></td>
+                                  <td rowspan="2" class="havest" ><div id="player-2-c"  class="hole" >0</div></td>
                             </tr>
                             <tr>
-                                  <td style="width: 12%; text-align: center"><div id="player-2-1"  style="min-height: 120px; height: 100%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
-                                  <td style="width: 12%; text-align: center"><div id="player-2-2"  style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
-                                  <td style="width: 12%; text-align: center"><div id="player-2-3"  style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
-                                  <td style="width: 12%; text-align: center"><div id="player-2-4"  style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
-                                  <td style="width: 12%; text-align: center"><div id="player-2-5"  style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
-                                  <td style="width: 12%; text-align: center"><div id="player-2-6"  style="height: 100%; border: 20px solid #311F15; border-radius: 30px;">4</div></td>
+                                  <td class="box" ><div id="player-2-1"  class="hole" >4</div></td>
+                                  <td class="box" ><div id="player-2-2"  class="hole" >4</div></td>
+                                  <td class="box" ><div id="player-2-3"  class="hole" >4</div></td>
+                                  <td class="box" ><div id="player-2-4"  class="hole" >4</div></td>
+                                  <td class="box" ><div id="player-2-5"  class="hole" >4</div></td>
+                                  <td class="box" ><div id="player-2-6"  class="hole" >4</div></td>
                             </tr>
                       </table>
                 </div>
-                <button id="reset" class="btn btn-outline-light" style="margin-top: 20px; margin-bottom: 70px;">Start</button>
+                <button id="reset" class="btn btn-outline-light">Start</button>
           </div>
 
       </div>
 
       <div class="container navbar fixed-bottom">
             <p class="game-explanation">
-                  <strong class="important">How to play:</strong><a href="#"> Follow this link </a></strong>
+                  <strong class="important">How to play:</strong><a href="tutorial.html"> Follow this link </a></strong>
             </p>
             <hr>
             <footer>
                   <p>
-                        Created by <a href="http://gabrielecirulli.com" target="_blank"> Awale team </a> for the <a href="https://developercircles2019.devpost.com/" target="_blank">Facebook Community challenge</a>
+                        Created by <a href="https://github.com/math-alpha/awale" target="_blank"> Awale team </a> for the <a href="https://developercircles2019.devpost.com/" target="_blank">Facebook Community challenge 2019</a>
                   </p>
             </footer>
       </div>
