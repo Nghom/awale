@@ -143,14 +143,15 @@ iframe {
   font-family: Montserrat-SemiBold;
   font-size: 16px;
   color: #555555;
-  line-height: 1.5;
+  line-height: .5;
+  padding-top: 0%;
 }
 
 .txt2 {
   font-family: Poppins-Regular;
   font-size: 14px;
   color: #999999;
-  line-height: 1.5;
+  line-height: .5;
 }
 
 .bo1 {border-bottom: 1px solid #999999;}
@@ -161,6 +162,7 @@ iframe {
 .limiter {
   width: 100%;
   margin: 0 auto;
+  height: 100%;
 }
 
 .container-login100 {
@@ -174,7 +176,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
   
   background-position: center;
   background-size: cover;
@@ -222,7 +224,7 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 5px;
   width: calc((100% - 20px) / 2);
   height: 70px;
   border-radius: 10px;
@@ -263,6 +265,8 @@ iframe {
 }
 
 .btn-face {
+  margin-left: 25%;
+  margin-right:25%;
   color: #fff;
   background-color: #3b5998;
 }
@@ -270,7 +274,7 @@ iframe {
 .btn-face i {
   font-size: 30px;
   margin-right: 17px;
-  padding-bottom: 3px;
+  padding-bottom:0px;
 }
 
 .btn-google {
@@ -318,7 +322,7 @@ iframe {
   width: 100%;
   background: transparent;
   height: 60px;
-  padding: 0 20px;
+  padding: 0 8px;
 }
 /*------------------------------------------------------------------
 [ Focus Input ]*/
@@ -525,3 +529,11 @@ iframe {
     width: 100%;
   }
 }
+}
+.p1:before, .p1:after { content:''; display:inline-block; vertical-align: middle; width: 2rem; height: 0px; background:white }
+.p1:before { margin-right: .0rem }
+.p1:after { margin-left: .0rem ;
+            padding-top: 0%;
+          padding-bottom: 0%;
+        margin-top: 0%;
+      margin-bottom: 0%;}
